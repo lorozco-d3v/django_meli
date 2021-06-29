@@ -1,0 +1,6 @@
+<form method="POST">
+    {% csrf_token %}
+    <h1>¿Desea eliminar el auto {{ object }}?</h1>
+    <button type="submit" class="btn btn-danger">Confirmar</button>
+    <a href="{% url 'index' %}">Cancelar</a>
+</form>
